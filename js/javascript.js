@@ -432,8 +432,7 @@ function newChar() {
         document.getElementById('genderDisplay').innerHTML = gender;
 
         job = randomString(sheetGen["job"]);
-        document.getElementById('jobDisplay').innerHTML = job;
-        switch (sheetGen["job"]) {
+        switch (job) {
         case 'Barbarian':
         case 'Fighter':
             max = str;
@@ -457,6 +456,7 @@ function newChar() {
             max = cha;
             break;
         }
+        document.getElementById('jobDisplay').innerHTML = max;
 
         alignment = randomString(sheetGen["alignment"]);
         document.getElementById('alignmentDisplay').innerHTML = alignment;
@@ -466,7 +466,7 @@ function newChar() {
 
         religion = randomString(sheetGen["religion"]);
         document.getElementById('religionDisplay').innerHTML = religion;
- 
+
     str = d3Random();
     document.getElementById('strength').innerHTML = str;
     dex = d3Random();
@@ -479,5 +479,5 @@ function newChar() {
     document.getElementById('wisdom').innerHTML = wis;
     cha = d3Random();
     document.getElementById('charisma').innerHTML = cha;
-  
+
 }
