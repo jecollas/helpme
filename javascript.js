@@ -305,12 +305,10 @@ var sheetGen = {
     };
 
 function random(maxNum) {
-    'use strict';
     return Math.floor(Math.random() * maxNum);
 }
 
 function d3Random() {
-    'use strict';
     return random(6) + random(6) + random(6) + 3;
 }
 
@@ -335,7 +333,6 @@ function randomString(strings) {
     return strings[randomNumber];
 }
 
-var stats;
 var max = Math.max.apply(null, stats);
 for (var i = 0; i < stats.length; i++) {
   if (stats[i] > max) {
