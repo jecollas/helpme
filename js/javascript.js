@@ -329,7 +329,6 @@ var stats = {
 };
 
 function randomString(strings) {
-    'use strict';
     var randomNumber = random(strings.length);
     return strings[randomNumber];
 }
@@ -343,7 +342,7 @@ for (var i = 0; i < stats.length; i++) {
 
 function newChar() {
 
-        race = randomString(sheetGen[race]);
+        race = randomString(sheetGen["race"]);
         document.getElementById('raceDisplay').innerHTML = race;
 
         switch (race) {
@@ -429,12 +428,12 @@ function newChar() {
             break;
         }
 
-        gender = randomString(sheetGen[gender]);
+        gender = randomString(sheetGen["gender"]);
         document.getElementById('genderDisplay').innerHTML = gender;
 
-        job = randomString(sheetGen[job]);
+        job = randomString(sheetGen["job"]);
         document.getElementById('jobDisplay').innerHTML = job;
-        switch (sheetGen[job]) {
+        switch (sheetGen["job"]) {
         case 'Barbarian':
         case 'Fighter':
             max = str;
@@ -459,13 +458,13 @@ function newChar() {
             break;
         }
 
-        alignment = randomString(sheetGen[alignment]);
+        alignment = randomString(sheetGen["alignment"]);
         document.getElementById('alignmentDisplay').innerHTML = alignment;
 
-        background = randomString(sheetGen[background]);
+        background = randomString(sheetGen["background"]);
         document.getElementById('backgroundDisplay').innerHTML = background;
 
-        religion = randomString(sheetGen[religion]);
+        religion = randomString(sheetGen["religion"]);
         document.getElementById('religionDisplay').innerHTML = religion;
     }
 
