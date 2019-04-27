@@ -314,12 +314,12 @@ function d3Random() {
     return random(6) + random(6) + random(6) + 3;
 }
 
-var str = ['d3Random'];
-var dex = ['d3Random'];
-var con = ['d3Random'];
-var int = ['d3Random'];
-var wis = ['d3random'];
-var cha = ['d3Random'];
+var str = d3Random();
+var dex = d3Random();
+var con = d3Random();
+var int = d3Random();
+var wis = d3random();
+var cha = d3Random();
 
 var stats = {
     "str": str,
@@ -331,7 +331,6 @@ var stats = {
 };
 
 function randomString(strings) {
-    'use strict';
     var randomNumber = random(strings.length);
     return strings[randomNumber];
 }
@@ -345,8 +344,6 @@ for (var i = 0; i < stats.length; i++) {
 }
 
 function newChar() {
-
-    function basic() {
         race = randomString(sheetGen[race]);
         document.getElementById('raceDisplay').innerHTML = race;
 
