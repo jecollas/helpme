@@ -466,17 +466,18 @@ function newChar() {
 
         religion = randomString(sheetGen["religion"]);
         document.getElementById('religionDisplay').innerHTML = religion;
-    }
-
-    "str" = d3Random();
-    document.getElementById('strength').innerHTML = str;
-    "dex" = d3Random();
-    document.getElementById('dexterity').innerHTML = dex;
-    "con" = d3Random();
-    document.getElementById('constitution').innerHTML = con;
-    "int" = d3Random();
-    document.getElementById('intelligence').innerHTML = int;
-    "wis" = d3Random();
-    document.getElementById('wisdom').innerHTML = wis;
-    "cha" = d3Random();
-    document.getElementById('charisma').innerHTML = cha;
+ 
+    str = d3Random();
+    document.getElementById('strength').innerHTML = "str";
+    dex = d3Random();
+    document.getElementById('dexterity').innerHTML = "dex";
+    con = d3Random();
+    document.getElementById('constitution').innerHTML = "con";
+    int = d3Random();
+    document.getElementById('intelligence').innerHTML = "int";
+    wis = d3Random();
+    document.getElementById('wisdom').innerHTML = "wis";
+    cha = d3Random();
+    document.getElementById('charisma').innerHTML = "cha";
+  
+}
