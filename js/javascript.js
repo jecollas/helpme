@@ -456,7 +456,7 @@ function newChar() {
             max = cha;
             break;
         }
-        document.getElementById('jobDisplay').innerHTML = max;
+        document.getElementById('jobDisplay').innerHTML = job;
 
         alignment = randomString(sheetGen["alignment"]);
         document.getElementById('alignmentDisplay').innerHTML = alignment;
