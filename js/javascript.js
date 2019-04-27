@@ -468,15 +468,15 @@ function newChar() {
         document.getElementById('religionDisplay').innerHTML = religion;
     }
 
-    str = d3Random();
+    "str" = d3Random();
     document.getElementById('strength').innerHTML = str;
-    dex = d3Random();
+    "dex" = d3Random();
     document.getElementById('dexterity').innerHTML = dex;
-    con = d3Random();
+    "con" = d3Random();
     document.getElementById('constitution').innerHTML = con;
-    int = d3Random();
+    "int" = d3Random();
     document.getElementById('intelligence').innerHTML = int;
-    wis = d3Random();
+    "wis" = d3Random();
     document.getElementById('wisdom').innerHTML = wis;
-    cha = d3Random();
+    "cha" = d3Random();
     document.getElementById('charisma').innerHTML = cha;
