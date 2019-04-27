@@ -1,0 +1,61 @@
+/* singleserve stylesheet */
+
+body {
+  padding: 2em;
+  background: #B29B8C url("../img/paper_texture2.jpg") center;
+  background-position: top;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inherit;
+  font-family: 'Metamorphous', cursive;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  padding: .3em;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  background-color: #242527;
+  color: #FEFDFA;
+  border: solid 3px;
+  border-color: #191A1B;
+}
+
+button:active {
+  background-color: #897263;
+  color: #242527;
+}
+
+table {
+  border-collapse: separate;
+  border: solid 1px #ddd;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  background: rgba(108, 82, 68, 0.5);
+  padding: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.table,
+.table td {
+  border: 0 none;
+}
+
+td {
+  font-size: 20px;
+  color: #191A1B;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
